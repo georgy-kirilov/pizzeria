@@ -14,6 +14,7 @@ var app = builder.Build();
 
 await using var scope = app.Services.CreateAsyncScope();
 using var db = scope.ServiceProvider.GetRequiredService<MenuDbContext>();
+await db.Database.EnsureCreatedAsync();
 await PizzaDataSeeder.Seed(db);
 
 app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
