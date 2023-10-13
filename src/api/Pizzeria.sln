@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{1C494C1A-2851-4646-8114-1E363510F1D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Menu", "Menu\Menu.csproj", "{22B24DC3-7360-47E9-9529-4FB8F19474FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{CE219A36-884B-413F-8BD6-030A5D96FB94}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{1A4FE775-DF8C-4317-8C1C-27B449D6D429}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C494C1A-2851-4646-8114-1E363510F1D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C494C1A-2851-4646-8114-1E363510F1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C494C1A-2851-4646-8114-1E363510F1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C494C1A-2851-4646-8114-1E363510F1D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B24DC3-7360-47E9-9529-4FB8F19474FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B24DC3-7360-47E9-9529-4FB8F19474FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B24DC3-7360-47E9-9529-4FB8F19474FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B24DC3-7360-47E9-9529-4FB8F19474FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE219A36-884B-413F-8BD6-030A5D96FB94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE219A36-884B-413F-8BD6-030A5D96FB94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE219A36-884B-413F-8BD6-030A5D96FB94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE219A36-884B-413F-8BD6-030A5D96FB94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4FE775-DF8C-4317-8C1C-27B449D6D429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4FE775-DF8C-4317-8C1C-27B449D6D429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4FE775-DF8C-4317-8C1C-27B449D6D429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4FE775-DF8C-4317-8C1C-27B449D6D429}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {133F7857-E5F9-490C-BBBA-D884CC7016F7}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  api:
+    container_name: pizzeria-api
+    image: pizzeria-api
+    build:
+      context: .
+      dockerfile: Api/Dockerfile
+    ports:
+      - "${API_PORT}:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${API_ENV}
+      - ConnectionStrings__Menu=Host=${MENU_DB_HOST};Username=${MENU_DB_USER};Password=${MENU_DB_PASSWORD};Database=${MENU_DB_NAME};
+    depends_on:
+      - menu-db
+    networks:
+      - pizzeria-net
+
+  menu-db:
+    container_name: pizzeria-menu-db
+    image: postgres:16
+    ports:
+      - "${MENU_DB_PORT}:5432"
+    environment:
+      - POSTGRES_USER=${MENU_DB_USER}
+      - POSTGRES_PASSWORD=${MENU_DB_PASSWORD}
+      - POSTGRES_DB=${MENU_DB_NAME}
+    volumes:
+      - menu-db-data:/var/lib/postgresql/data
+    networks:
+      - pizzeria-net
+
+networks:
+  pizzeria-net:
+    driver: bridge
+
+volumes:
+  menu-db-data:
